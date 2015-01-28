@@ -2,7 +2,7 @@
 
 Some utility functions I create for little tasks.
 
-#### replace_non_asccii
+#### replace_non_ascii
 
 Function to replace tipycal spanish characters such as accents and ñ to create variable names from strings.
 Example:
