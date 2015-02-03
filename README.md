@@ -14,3 +14,13 @@ print new_var #u'conTILDEocCOMMA_tengo_aCuteceCutentoCutes'
 reversed_new_var = replace_spanish_alphabet(var, new_var)
 print reversed_new_var #Coño, tengo ácéntós
 ```
+
+#### timers
+
+Function to repeat periodically another function
+
+```python
+def print_hw():
+    print "hola mundo"
+repeat_func(print_hw, 1)
+```
