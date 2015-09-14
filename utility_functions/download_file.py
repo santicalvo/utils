@@ -38,23 +38,3 @@ def download_file(file_url, path=None):
         percent = round(percent*100, 2)
         sys.stdout.write( "Downloaded %d of %d bytes (%0.2f%%)\r" % (bytes_so_far, total_size, percent) )
         sys.stdout.flush()
-
-'''
-def download_file(url, path, new_name=None):
-    # Open the url
-    try:
-        f = urlopen(url)
-        file = os.path.join(path, os.path.basename(url))
-        print "downloading " + url + " to path " + path
-        # Open our local file for writing
-        with open(file, "w") as local_file:
-            local_file.write(f.read())
-        print "downloaded " + file
-    #handle errors
-    except HTTPError, e:
-        print "HTTP Error:", e.code, url
-    except URLError, e:
-        print "URL Error:", e.reason, url
-    except IOError, e:
-        print "IOError: please provide a path with a file to download ", e.message, url
-'''
