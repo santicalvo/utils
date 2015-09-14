@@ -61,8 +61,8 @@ def insert_rows():
 
 if __name__ == '__main__':
     db = MySQLdb.connect(host="localhost",user="root",passwd="root")
-    table = 'pruebas'
-    if not checkTableExists(db, table):
+    database = 'pruebas'
+    if not checkTableExists(db, database):
         create_database()
     insert_rows()
     print 'continuo'
