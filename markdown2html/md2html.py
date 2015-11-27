@@ -29,3 +29,5 @@ try:
     f.close
 except Exception as ex:
     print 'Error: ', ex
+    sys.exit(0)
+
