@@ -24,3 +24,10 @@ def print_hw():
     print "hola mundo"
 repeat_func(print_hw, 1)
 ```
+
+#### recursive_delete
+
+Function to delete a folder recursively in a directory
+```bash
+python recursive_delete.py .svn /path/to/parent
+```
