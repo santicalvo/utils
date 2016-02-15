@@ -4,7 +4,7 @@ def recursive_delete(folder_name, folder_root):
     origin = -len(folder_name)
     folders = []
     for root, dirs, files in os.walk(folder_root):
-        if(root[origin:] == '.svn'):
+        if(root[origin:] == folder_name):
             folders.append(root)
     for folder in folders:
         try:

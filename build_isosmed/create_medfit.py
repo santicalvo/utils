@@ -65,6 +65,7 @@ def add_plugins_from_file(path):
 def add_android():
     command = 'cordova platform add android'
     try:
+        print 'Adding android to project: '
         comm = run_command(command)
         print comm[0]
     except Exception as e:

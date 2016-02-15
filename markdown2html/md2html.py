@@ -13,7 +13,8 @@ elif len(sys.argv) == 3:
     input_file = sys.argv[1]
     output_file = sys.argv[2]
 else:
-    print 'You should at least pass the input file'
+    print '''Usage : python md2html /path/to/file.md <path/to/output.html>
+          'You should at least pass the input file'''
     exit(0)
 
 md = codecs.open(input_file, mode="r", encoding="utf-8").read()
